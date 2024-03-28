@@ -1,0 +1,178 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ani Hakobyan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Ani Hakobyan</a></h1>
+        <div class="social-links mt-3 text-center">
+          <p class="text-p">hakobyanani@protonmail.com</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>A Network Analysis of <br>the Post-Soviet Region</h1>
+      <p><span class="typed" data-typed-items="Alliance formation, and, Conflicts"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+		
+        <div class="section-title">
+          <h5>States form military alliances to strengthen their security from potential threats. 
+		  They build an interconnected military alliance network and link through a complex web of relations. 
+		But conflicts can alter these connections and impair alliance structures.   <br><br>
+		  To analyze the impact of conflicts on alliance networks, I examine the post-Soviet region. <br><br>
+		  
+		  
+		  Based on the temporal exponential random graph model (TERGM), I conduct a network analysis of post-Soviet alliance 
+		  structures, considering the impact of three conflicts:  
+		 the Russo-Georgian War in 2008, the Annexation of Crimea by Russia in 2014, and the Nagorno Karabakh War in 2020. 
+		 </h5><br><br><p>Post-Soviet Alliances 2008-2020</p>
+		 <img src="assets/img/alliances.png" class="img-fluid" alt=""><br>
+        <br></div>
+		<h5>TERGM's enable probability assessment of the observed network compared to any possible permutation 
+		of alliances in an alternative network. It considers the same number of nodes based on the statistics of the network. 
+		The model measures the dependencies of the network as well as the covariates at the dyadic level. 
+		It uses bootstrap maximum pseudolikelihood estimation, which was developed by Desmarais and Cranmer (2012) for unbiased simulation studies.  
+		</h5>
+		<br><br><h4>TERGM's are build on Exponential Random Graph Models</h4><br><br>
+		<h5>The fundamental structures, which produce network effects, have been referred to as “k-stars” 
+		in the network literature. In its basic form, the k-star occurs as a 2-star when a dyad, or in this case, state i, shares a tie or is allied to states j and h.</h5>
+		 <img src="assets/img/kst.jpg" class="img-fluid" alt="">
+		 <h5>For instance, an alliance network is formed when Russia is allied with Belarus and Pakistan, but Pakistan and Belarus are not allied with one another. Similarly, a 3-star is formed if state i is connected to states j, h, and l, yet the last three states do not share any links. </h5>
+		 <br>
+		 <br>
+		 <h5>k-stars are included in the structural statistics of Exponential Random Graph Models. The statistics of k-starts are expressed in the following equation:</h5>
+		 <img src="assets/img/kstar.png" class="img-fluid" alt="">
+		 <h5>Where + sign suggests the summation of all i (Snijder et al. 2006). Essentially the star equation counts 
+		 the number of k-stars that are present in the observed network to then use the number in the estimation process 
+		 by putting greater weights on simulated networks which have similar or the same amount of k-stars.<br><br>
+		In essence, k-stars can capture “preferential attachments” or “popularity effects” in network structures. 
+		In the post-Soviet network, k-stars can capture the patterns of multiple states allying with the same state.
+		<br><br><br><h5>
+		The next endogenous structure I considered was triangles. 
+		Triangles can be seen as the continuation of k-stars in network structures. 
+		Two nodes were  considered more likely to ally if they were both linked to the same node. 
+		The network literature refers to this phenomenon as “triangle closure”:
+		 </h5>
+		  <img src="assets/img/triangle.png" class="img-fluid" alt="">
+		 <br>
+		 <h5>In addition to these endogenous network structures, the three conflicts mentioned above, a number of independent variables were also accounted for.
+			These included: 
+		 </h5><br>
+		<h5> <ul>
+		  <li>Direct Contiguity</li>
+		  <li>State Capabilities - Composite index of national capabilities (CINC)</li>
+ 		 <li>Russian Bases Abroad</li>
+ 		 <li>Trade Dependency (GDP, Export, Import and Energy)</li>
+		  <li>Political Compatibility - Freedom House Democracy Index, the BTI Political Transformation Index and the UN the Human Development Index</li>
+		</ul></h5> <br><br>
+		<h4>The Results</h4><br>
+		 <img src="assets/img/results.jpg" class="img-fluid" alt="">
+		 <br><br>
+		 <h5>The model estimated the post-Soviet alliance network at three points in time – 2008, 2014, and 2020 - 
+		 to capture the effects of interstate conflicts on the state ties or edges. Based on the history of the 
+		 Russo-Georgian War in 2008, the Annexation of Crimea by Russia in 2014 and the Nagorno Karabakh war in 2020, 
+		 the model predicted the probability of new allinaces. The results in bold are statistically significant.  
+		 </h5><br><br>
+		 <h5>Conceptualizing alliance formation as a complex network enables the measurement of falsifiable and precise 
+		dependencies in an alliance system. Suggesting that interstate conflicts decrease the likelihood of forming alliance ties, the analysis confirmed that 
+		conflicts produced debilitating effects and reduced the probability of alliance formation in the regional post-Soviet network. 
+		<br><br> 
+		Additionally, I measured the endogenous network structures of the post-Soviet region and found that 'synergy' effects positively 
+		impacted edge formation. The prospect of allying with states that already share a connection increases the utility of an alliance 
+		 and makes it more advantageous. </h5>
+   
+<br><br>
+<h7>Follow this link for the </h7><h7><a href="https://github.com/asurias/asurias.github.io/blob/b3a693432f20efe95844d70a3b87911fd113e58c/assets/post-soviet%20network%20analysis.R">
+R Script</a></h7><br><br><br><br>
+			 
+<h7>References</h7>
+<br><br>
+<p>Desmarais BA, Cranmer SJ (2012c). “Statistical Mechanics of Networks: Estimation and Uncertainty.” Physica A: Statistical Mechanics and its Applications, 391(4), 1865–1876. doi:10.1016/j.physa.2011.10.018.</p>
+<p>Cranmer, Skyler J., and Bruce A. Desmarais. (2011) Inferential Network Analysis with Exponential Random Graph Models. Political Analysis 19(1):66–86.</p> 
+
+ </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+       <p> &copy; Copyright <strong><span>Ani Hakobyan</span></strong></p>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
