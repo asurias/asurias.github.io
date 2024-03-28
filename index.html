@@ -61,8 +61,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>The Dynamics of Alliance Formation</h1>
-      <p><span class="typed" data-typed-items="A Theoretical Perspective
-"></span></p>
+      <p><span class="typed" data-typed-items="A Theoretical Perspective"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -73,74 +72,57 @@
       <div class="container">
 		
         <div class="section-title">
-          <h5>States form military alliances to strengthen their security from potential threats. 
-		  They build an interconnected military alliance network and link through a complex web of relations. 
-		But conflicts can alter these connections and impair alliance structures.   <br><br>
-		  To analyze the impact of conflicts on alliance networks, I examine the post-Soviet region. <br><br>
-		  
-		  
-		  Based on the temporal exponential random graph model (TERGM), I conduct a network analysis of post-Soviet alliance 
-		  structures, considering the impact of three conflicts:  
-		 the Russo-Georgian War in 2008, the Annexation of Crimea by Russia in 2014, and the Nagorno Karabakh War in 2020. 
-		 </h5><br><br><p>Post-Soviet Alliances 2008-2020</p>
-		 <img src="assets/img/alliances.png" class="img-fluid" alt=""><br>
-        <br></div>
-		<h5>TERGM's enable probability assessment of the observed network compared to any possible permutation 
-		of alliances in an alternative network. It considers the same number of nodes based on the statistics of the network. 
-		The model measures the dependencies of the network as well as the covariates at the dyadic level. 
-		It uses bootstrap maximum pseudolikelihood estimation, which was developed by Desmarais and Cranmer (2012) for unbiased simulation studies.  
-		</h5>
-		<br><br><h4>TERGM's are build on Exponential Random Graph Models</h4><br><br>
-		<h5>The fundamental structures, which produce network effects, have been referred to as “k-stars” 
-		in the network literature. In its basic form, the k-star occurs as a 2-star when a dyad, or in this case, state i, shares a tie or is allied to states j and h.</h5>
-		 <img src="assets/img/kst.jpg" class="img-fluid" alt="">
-		 <h5>For instance, an alliance network is formed when Russia is allied with Belarus and Pakistan, but Pakistan and Belarus are not allied with one another. Similarly, a 3-star is formed if state i is connected to states j, h, and l, yet the last three states do not share any links. </h5>
-		 <br>
-		 <br>
-		 <h5>k-stars are included in the structural statistics of Exponential Random Graph Models. The statistics of k-starts are expressed in the following equation:</h5>
-		 <img src="assets/img/kstar.png" class="img-fluid" alt="">
-		 <h5>Where + sign suggests the summation of all i (Snijder et al. 2006). Essentially the star equation counts 
-		 the number of k-stars that are present in the observed network to then use the number in the estimation process 
-		 by putting greater weights on simulated networks which have similar or the same amount of k-stars.<br><br>
-		In essence, k-stars can capture “preferential attachments” or “popularity effects” in network structures. 
-		In the post-Soviet network, k-stars can capture the patterns of multiple states allying with the same state.
-		<br><br><br><h5>
-		The next endogenous structure I considered was triangles. 
-		Triangles can be seen as the continuation of k-stars in network structures. 
-		Two nodes were  considered more likely to ally if they were both linked to the same node. 
-		The network literature refers to this phenomenon as “triangle closure”:
-		 </h5>
-		  <img src="assets/img/triangle.png" class="img-fluid" alt="">
-		 <br>
-		 <h5>In addition to these endogenous network structures, the three conflicts mentioned above, a number of independent variables were also accounted for.
-			These included: 
-		 </h5><br>
-		<h5> <ul>
-		  <li>Direct Contiguity</li>
-		  <li>State Capabilities - Composite index of national capabilities (CINC)</li>
- 		 <li>Russian Bases Abroad</li>
- 		 <li>Trade Dependency (GDP, Export, Import and Energy)</li>
-		  <li>Political Compatibility - Freedom House Democracy Index, the BTI Political Transformation Index and the UN the Human Development Index</li>
-		</ul></h5> <br><br>
-		<h4>The Results</h4><br>
-		 <img src="assets/img/results.jpg" class="img-fluid" alt="">
-		 <br><br>
-		 <h5>The model estimated the post-Soviet alliance network at three points in time – 2008, 2014, and 2020 - 
-		 to capture the effects of interstate conflicts on the state ties or edges. Based on the history of the 
-		 Russo-Georgian War in 2008, the Annexation of Crimea by Russia in 2014 and the Nagorno Karabakh war in 2020, 
-		 the model predicted the probability of new allinaces. The results in bold are statistically significant.  
-		 </h5><br><br>
-		 <h5>Conceptualizing alliance formation as a complex network enables the measurement of falsifiable and precise 
-		dependencies in an alliance system. Suggesting that interstate conflicts decrease the likelihood of forming alliance ties, the analysis confirmed that 
-		conflicts produced debilitating effects and reduced the probability of alliance formation in the regional post-Soviet network. 
-		<br><br> 
-		Additionally, I measured the endogenous network structures of the post-Soviet region and found that 'synergy' effects positively 
-		impacted edge formation. The prospect of allying with states that already share a connection increases the utility of an alliance 
-		 and makes it more advantageous. </h5>
+          <h5>The Dynamics of Alliance Formation: A Theoretical Perspective
+
+
+The likelihood of political groups to ally goes back to the earliest human settlements and definitively predates states by not less than two millennia (Touchstone 1998). The formation of alliances between modern states is multifaceted: states form alliances to safeguard from a common threat, to increase their security, as well as to facilitate peace among possible rivals (Kim 1991; Maoz et al. 2006). However, in spite of the long history of alliance formation, the impact of different factors influencing the structure of alliances remains poorly understood. So instead of examining alliances through dyadic dependencies that might exist between states, I consider the network-based theory as a foundation to determine alliance causality. 
+<br><br>
+While the network-based theory focuses on larger network structures of alliances, the basic component of alliance relations are still dyad level determinants. As a result, a network analysis also looks at dyad level attributes of alliances: essentially political fellowship and capability aggregation.
+
+Presuming that a formed alliance is reliable, states might benefit from it in different ways. Neorealists for instance suggested that alliances can be especially beneficial for states that have a common enemy (Walt 1987). Some researchers have found empirical support for this argument (Gibler and Wolford 2006; Lai and Reiter 2000). Alliances have also been considered as a framework of capability aggregation over states to expand collective security (Liberman 1996; Altfeld 1984; Morrow 1993; Walt 1987; Waltz 1979). Morrow (1994) found that the increase in power through alliances impacted a state’s ability for deterrence (the ability to bargain in crises), although, it might be questionable to what extent alliances increase the military power of their members (Brooks 1997).  Powell (1999) and Walt (1987) found that alliances facilitate balancing between competing powers.
+<br><br>
+Nonetheless, as beneficial as alliances might be, they also produce costs. This includes the limitation of available actions and, to a certain degree, also the loss of autonomy (Morrow 1987; Altfeld 1984). Another potential cost that states might be forced to pay after joining an alliance is that they might be tied to a conflict in which they would not wish to participate. In some cases, alliances might also be a means of diffusing war (Siverson and King 1980; Siverson and Tennefoss 1984). Yet, the greatest possible cost of joining an alliance is that a new member might be tied into a war in which it has no interest to participate. Some researchers suggest that alliance members are more likely to be drawn into a war, especially if the alliance is new, defensive, with smaller capabilities and other allies are already involved in a conflict (Siverson and King 1980). Furthermore, alliance members with close proximity to a conflict, in addition to opportunity and willingness are far more likely to engage in war (Siverson and Starr 1990). 
+<br><br>
+When considering how states choose their allies, different factors need to be accounted for. For instance, political tensions or enemies can be a driving factor for states to ally. Given that few states have the capability for long-time power projection, establishing good relations with neighboring countries might be beneficial for resolving local disputes (Gibler and Vasquez 1998). At the same time, states that have unresolved conflicts or are likely to engage in conflict might not have the motivation to ally unless they face a common threat, in which case they might put aside their differences to neutralize the common enemy (Lai and Reiter 2000; Walt 1987). In essence, conflicts can have a significant impact on state behavior. <br><br>
+When considering the effects of conflicts, researchers have examined major wars that have challenged the security and interests of the international system (Brecher 2008; Gilpin 1981) or have strengthened and terminated international rivalries (Diehl and Goertz 2000). For instance, the collapse of empires like the Austro-Hungarian empire in 1918, the French and British empires in the 1960s and 1950s, and the fall of the Soviet Union in the 1990s had a major impact on many states. These events have affected alliances, induced state realignments, and regime change (Maoz 2016). 
+<br><br>
+Although the nature of an alliance also requires consideration, the alliances themselves have the potential to cultivate aggression and conflict. Scholars suggest that some states seek to form alliances with the prospect of engaging in conflict (Singer and Small 1967). In this respect, allies are more likely to engage in conflict, as third states will not intervene, and any foreign policy shifts in the alliance will increase the benefits for the initiator (Bueno de Mesquita et al. 1981). Ray (1990), on the other hand, argued that a positive correlation between conflict propensity and alliance ties does not equate to causation. Alliance characteristics also need to be considered in this regard; some studies have found certain alliance characteristics that have a higher propensity for conflict (Gibler 1996; Senese and Vasquez 2004; Siverson and King 1980).  
+<br><br>
+Nevertheless, multivariate findings that consider state contiguity find no significant correlation between alliance formation and conflicts. In other words, joining an alliance does not necessarily increase the risk of conflict propensity (Reed 2000; Russett and Oneal 2001; Clark and Regan 2003).  On the other hand, do conflicts conversely increase the likelihood of alliance formation?
+<br><br>
+When considering possible explanations for how states ally, a certain extent of political compatibility and state capability seems relevant. Waltz (1979) for instance, points out that both alliances and conflicts could be caused due to the changes in capabilities, so that states might engage in one of these processes (conflict or alliance formation) with regard to these changes. The effects of military capabilities on alliance formation have been examined in different ways, in the context of alliance formation and major powers (Levy 1983), changes of military capabilities across alliances leading to conflicts (Kim 1989), and changes in military capabilities causing tie loss or alliance termination (Leeds and Savun 2004; Morrow 1991). These effects might be explained by the trade-offs that states might make by joining. As one state might become increasingly dominant within the alliance, others might in contrast rely increasingly on other allies for  military capabilities. In this context, alliance formation is less likely when the costs are too high - for states would rather gain from joining an alliance than develop security dependencies (Kimball 2010). However, this does not account for other factors, like  a general threat that would increase the costs of not joining an alliance. 
+<br><br>
+Another important component in the alliance literature is the commitment to the credibility or the reliability of alliances (Morrow 1994; Fearon 1997; Leeds 2003). Allies might desert or leave  a partner in their time of  need (Snyder 1984). This is related to the issue of the power imbalance between allies. Stronger partners might fear exploitation for providing an overly disproportionate portion of military resources to allies. For example, the Robert Gates, the former American Secretary of Defense, made concerning statements about the reduced defense spending of the European partners in the North Atlantic Treaty Organization (NATO):<br>
+“But some two decades after the collapse of the Berlin Wall, the U.S. share of NATO defense spending has now risen to more than 75 percent – at a time when politically painful budget and benefit cuts are being considered at home. The blunt reality is that there will be dwindling appetite and patience in the U.S. Congress – and in the American body politic writ large – to expend increasingly precious funds on behalf of nations that are apparently unwilling to devote the necessary resources or make the necessary changes to be serious and capable partners in their own defense. Nations apparently willing and eager for American taxpayers to assume the growing security burden left by reductions in European defense budgets.” (Horowitz 2017)
+
+<br><br>
+Provided that allies fear being exploited, alliance members might need to signal their eagerness to become responsible partners, especially in the formation phase (Palmer and Souchet 1994; Olsen and Zeckhauser 1967). This includes several measures that indicate a state’s “worthiness” as a partner - expanding defense spending, growing military size, developing and displaying military technology, as well as mobilizing troops (Slantchev 2011). One instance comes from the hesitancy of the British Joint Chiefs to ally with the Soviet Union in 1939. During a cabinet meeting on March 18, it was assumed that the Soviet Union would not be able to fight outside its borders due to its troop's “uncertain quantity” (Manne 1974). Thus, the British were unwilling to ally because of the quantity and lack of proximity. In this context, signaling the level of state capabilities can be significant in explaining state behavior (Reiter 2003).  
+<br><br>
+States can signal their military might through different means, one of which is their recruitment policies. States either recruit personnel to the military through conscription or voluntarily by offering some inducements to joining. Conscription allows states to have  a larger number of active reserves or trained reserves that can become active reserves. A good example of a state-changing to conscription-based recruitment as a result of external threats was the United Kingdom during World War I, after the forces based on volunteers were reduced in number, they shifted to a conscripted army (Dewey 1984). Conscription also allows states to draw from a larger number of military reserves. Horowitz (2017) also suggests that states, which have changed to conscription have a higher likelihood of forming alliances and that  conscription signal reliability in terms of alliance contribution.
+<br><br>
+Another important factor in alliance formation is a certain level of political compatibility - ideological, normative, and cultural similarities. In that regard, researchers have suggested that democratic states are more likely to ally (Siverson and Emmons 1991; Lai and Reiter 2000; Warren 2010). Others criticize this notion and consider alliance formation based on regime similarity a heritage of the Cold War (Simon and Gartzke 1996; Gibler and Wolford 2006). Nevertheless, alliances can indicate a convergence of mutual interests (Lemke and Reed 1996) and mirror similarities between political institutions and cultural norms (Simon and Gartzke 1996). Some scholars argue that cooperation between allies can over time lead to shared institutional structures that might provide mechanisms to avoid war (Bennet and Stam 2004). However, one of the potential factors that might reduce the effects of political compatibility may be political tension or a common enemy (Lai and Reiter 2000). <br><br>
+As such, at the basic level, joining an alliance can indicate an intention to develop peaceful relations and possibly to gain military support. The notion that alliance formation indicates peaceful intentions have been supported by Long et al. (2007). They found that the likelihood of long-term peace between states increases when they join an alliance. Realist and game theoretic approaches support the idea that alliances denote valid measures of a state’s perceived probability of conflict with allied partners (Walt 1985; Morrow 2001). In addition, Fearon (1997) argues that alliances reflect the foreign policy interests of states in this respect, states will be forced to act in compliance with their partners. Although states have far more incentives for joining an alliance I consider these simple signals of expectations and intentions to be a basic communicative character of alliances. 
+<br><br>
+At the same time, state behavior and decisions can also be influenced through  the regime of a state (Maoz and Russet 1993; Russett 1993). Similarly, revolutions can seriously impact alliances (Walt 1992; Maoz 1989; Colgan 2013). When considering which country to ally with, a certain degree of political compatibility can be an attractive factor for potential allies for the following reasons: <br>
+First, states may choose to ally with states closer to them in terms of ideology, norms and culture. In this context, Simon and Gartzke (1996) found that alliances mirror commonalities of culture, norms and political institutions. <br>
+Second, alliances can over time create similarities between states. <br>
+Bennett and Stam (2004) have expanded this notion and they suggest that collaboration through alliances can over time develop shared institutional structures, which will provide incentives to avoid conflict. <br>
+Furthermore, political norms like democracy have the likelihood to cluster (Gleditsch and Ward 2006). According to Gleditsch and Ward (2006), diffusion processes between states influence the dissemination of  democracy in the international system. They also find a strong interconnection between a state’s institutions and the convergence of democracy in the neighboring region. Moreover, alliances with democracies have been seen as more credible because of the greater public accountability of democratic states and therefore less likely to withdraw from public and formal commitments (Leeds 1999). Since democracies are also more transparent, they are given more credibility as potential alliance partners (Lipson 2003). This notion suggests that more democratic regimes are more likely to form an alliance with each other than authoritarian regimes. Following this logic, Horowitz (2015) suggests that similarly authoritarian regimes are more likely to ally with democratic than authoritarian regimes, due to the higher credibility of democratic regimes. <br>
+
+The ideological regime type literature, on the other hand, emphasizes the fusion of political institutions with the ideological values and policy ambitions of states (Moravcsik 1997). In this sense, Aron (1973) explains that the international system is characterized by states with similar and different preferences. Considering that democratic norm diffusion could have spillover effects for authoritarian regimes, authoritarian regimes might be skeptical of forming alliances with democracies.<br><br>
+
+Considering that trade policies align with the national security interests of the state, the alliance literature also accounts for dyadic trade. As such, alliances facilitate trade flows while political tensions cause trade restrictions (Gowa 1994; Long 2003; Gowa and Mansfield 2004). Alliances and trade flows are linked in two ways. First, alliances guide “security externalities'' that derive from trade flows, which also influence trade policies toward other states. On the other hand, alliances decrease the possibility of conflict between states and therefore produce a more opportunistic environment for companies (Haim 2016). 
+<br><br>
+Additionally, Gowa and Mansfield (1993) suggest that indirect dyadic relationships also have effects on trade flows. For instance, during the Cold War, the United States encouraged trade with states aligned with the Western bloc, whereas in the case of the Soviet block - the highest tariffs (in the history of the US) were implemented on imports for Soviet states (Gowa 1994). Nevertheless, empirical research confirms that trade has a reducing effect on conflicts (Oneal and Ray 1997; Oneal and Russett 1997). 
+<br><br>
+Interdependent trade between powerful states reduces the probability of militarized disputes (Oneal and Russett 1999). However, when it comes to alliances, researchers have found that powerful states tend to form alliances with smaller states. As Morrow (1991) found 48% (78 of 164 alliances) of all alliances formed from 1816 to 1965 were between powerful and smaller states. Similarly, the dyadic defense alliances included in the Alliance Treaty Obligations and Provisions (ATOP) data from 1815 to 1944 differentiate 47% of partnerships between minor and major powers. <br><br>
+Although alliances are generally understood as a means to aggregate military capabilities, in the face of a common threat a minor state’s military contributions would not be enough to compensate a more powerful partner, considering the risks of military involvement. <br>
+Fordham (2010) explains this as a mechanism for securing commercial relationships against alterations that may be caused due to domestic or external conflicts. In this context, major states form alliances with minor states to secure the safety of valuable trade connections. <br>
+Allying with a minor state can also help prevent interference from third-party states, as they might try altering trade relations through conflict or diplomacy. For instance, Iraq's invasion of Kuwait in 1990 raised concerns for the United States about the possible repercussions of Saddam Hussein’s regional ambitions for US trade relations and the access to Saudi Arabia (oil trade). These considerations resulted in new safety commitments in the region. Civil wars can equally impact trade relations. For instance, the 1959 revolution in Cuba essentially ended trade relations with the US. Afterward, the United States used direct military intervention and foreign aid to promote US trade interests in Latin American states - to prevent the recurrence of the Cuban revolution (Fordham 2010).
+
+ </h5>
    
 <br><br>
-<h7>Follow this link for the </h7><h7><a href="https://github.com/asurias/asurias.github.io/blob/b3a693432f20efe95844d70a3b87911fd113e58c/assets/post-soviet%20network%20analysis.R">
-R Script</a></h7><br><br><br><br>
 			 
 <h7>References</h7>
 <br><br>
